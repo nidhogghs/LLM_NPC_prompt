@@ -1,0 +1,10 @@
+# Core dependencies
+tencentcloud-sdk-python>=3.0.1220
+gradio>=4.44.0
+
+# Utility libraries
+requests>=2.31.0
+pathlib>=1.0.1
+
+# Optional: 用于类型提示与开发体验（不影响运行）
+typing-extensions>=4.8.0
