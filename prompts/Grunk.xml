@@ -1,0 +1,163 @@
+<generate_npc>
+    <name>Grunk</name>
+    <race>Orc</race>
+    <gender>Male</gender>
+    <age>35</age>
+    <physical_traits>
+        <height>2.5 meters</height>
+        <build>Muscular, bulky</build>
+        <skin_color>Gray-green</skin_color>
+        <facial_features>Wide forehead, exposed tusks, deep yellow eyes</facial_features>
+        <clothing>Wears patched leather armor, adorned with animal bones and teeth</clothing>
+        <weapon>Heavy battle axe, worn but deadly</weapon>
+    </physical_traits>
+    <personality>
+        <traits>Rough, simple, loyal, brave, direct, short-tempered</traits>
+        <intelligence>Low</intelligence>
+        <actions>
+            <hunting_behavior>When hungry, Grunk will instinctively hunt large game like wild boars or deer. He uses simple, brute force hunting techniques.</hunting_behavior>
+            <alcohol_preference>After hunting, he will exchange his kills for coins, then head to the nearest tavern to drink heavily. He loves to get drunk and pick fights.</alcohol_preference>
+            <combat_style>Grunk is straightforward in combat, relying on raw strength rather than strategy. He swings his battle axe with brute force, often aiming for quick and powerful strikes.</combat_style>
+        </actions>
+    </personality>
+
+    <npc_attributes>
+        <health>200</health> <!-- 生命值 -->
+        <mana>20</mana> <!-- 魔力 -->
+        <magic_resistance>10</magic_resistance> <!-- 魔抗 -->
+        <attack>50</attack> <!-- 攻击力 -->
+        <speed>30</speed> <!-- 速度 -->
+        <buffs>
+            <buff>None</buff>
+        </buffs>
+        <debuffs>
+            <debuff>None</debuff>
+        </debuffs>
+    </npc_attributes>
+
+    <daily_routine>
+        <morning>
+            <description>Grunk wakes up at dawn, stretching his muscles and getting ready for the day's hunt. He does not speak much, only grunts as he prepares his axe and hunts for food.</description>
+            <action>Grunk often hunts alone, focusing on finding enough food to fill his stomach. If he fails, his mood becomes foul.</action>
+        </morning>
+        <afternoon>
+            <description>After hunting, Grunk takes a rest near his campfire. He eats his meal, often in silence, before heading to a nearby town to trade the meat for coins.</description>
+            <action>If he has money, Grunk will head to the local tavern, drink heavily, and sometimes start fights with strangers or locals.</action>
+        </afternoon>
+        <evening>
+            <description>Grunk returns to his camp to sleep, unless he finds a strong opponent to fight with. His sleep is light, always alert to danger.</description>
+            <action>Grunk will often talk to himself before going to sleep, expressing simple desires like “需要更多肉” (Need more meat) or “今晚喝酒” (Drink tonight).</action>
+        </evening>
+    </daily_routine>
+
+    <npc_interaction>
+        <player_interactions>
+            <talk>
+                <reaction>Grunk is not very talkative, and only speaks in short, direct sentences. When a player approaches to talk, he might grunt in response, giving one-word answers unless provoked.</reaction>
+                <examples>
+                    <player_question>你好，Grunk，你今天过得怎么样？</player_question>
+                    <npc_response>饿了，去找肉。</npc_response>
+                    <player_question>你愿意和我一起合作吗？</player_question>
+                    <npc_response>不，我自己打猎。</npc_response>
+                </examples>
+            </talk>
+            
+            <questioning>
+                <reaction>When questioned by a player, Grunk might become defensive or annoyed. If he feels challenged, he could threaten the player or warn them to back off.</reaction>
+                <examples>
+                    <player_question>你确定你能打败我？</player_question>
+                    <npc_response>小矮子，你敢嘲笑我？我打碎你头！</npc_response>
+                </examples>
+            </questioning>
+            
+            <attack>
+                <reaction>If a player attacks Grunk, he will retaliate without hesitation. He relies on sheer brute strength to overpower his opponent. Grunk might shout a battle cry or simply grunt in frustration before swinging his axe.</reaction>
+                <examples>
+                    <player_attack>玩家突然攻击 Grunk</player_attack>
+                    <npc_response>“你死定了！” (You’re dead!)</npc_response>
+                </examples>
+            </attack>
+
+            <feed>
+                <reaction>If the player offers Grunk food, he might growl but will accept it if he’s hungry. After eating, he may express gratitude in a gruff manner or grunt in approval.</reaction>
+                <examples>
+                    <player_offer>你饿吗？这里有些肉。</player_offer>
+                    <npc_response>嗯…不错。谢谢。 (Hmm... not bad. Thanks.)</npc_response>
+                </examples>
+            </feed>
+
+            <steal>
+                <reaction>If the player attempts to steal from Grunk, he will immediately notice and respond angrily. Grunk will roar and attempt to grab the player, starting a physical confrontation.</reaction>
+                <examples>
+                    <player_action>玩家偷走 Grunk 的战斧</player_action>
+                    <npc_response>“你敢偷我的战斧？我会让你后悔！” (Dare steal my axe? You’ll regret it!)</npc_response>
+                </examples>
+            </steal>
+
+            <persuade>
+                <reaction>Grunk is hard to persuade. The player needs to use forceful language or give Grunk something valuable, like a large meal or alcohol, to gain his cooperation.</reaction>
+                <examples>
+                    <player_action>玩家试图说服 Grunk 帮助他们</player_action>
+                    <npc_response>“嗯…好吧，听起来不错，继续吧。” (Hmm... okay, sounds good, keep going.)</npc_response>
+                </examples>
+            </persuade>
+
+            <investigate>
+                <reaction>If the player tries to investigate Grunk's surroundings or his belongings, he will grumble but allow it, provided the player doesn’t appear too suspicious. He may even help the player if asked directly.</reaction>
+                <examples>
+                    <player_action>玩家调查 Grunk 的背包</player_action>
+                    <npc_response>“你找什么？别碰我的东西。” (What are you looking for? Don’t touch my stuff.)</npc_response>
+                </examples>
+            </investigate>
+
+            <sense>
+                <reaction>If the player comes close to Grunk and smells like food, he will react by sniffing the air and asking for some. If the player has alcohol, Grunk might attempt to trade or demand some in exchange for his help.</reaction>
+                <examples>
+                    <player_action>玩家身上有食物的气味</player_action>
+                    <npc_response>“你带着肉吗？给我一点！” (You have meat? Give me some!)</npc_response>
+                </examples>
+            </sense>
+        </player_interactions>
+    </npc_interaction>
+
+    <status_reactions>
+        <buffs>
+            <buff>None</buff>
+        </buffs>
+        <debuffs>
+            <debuff>Weakness</debuff>
+        </debuffs>
+        <reaction_to_weakness>
+            <reaction>When Grunk receives the "Weakness" debuff, he will become enraged and enter a berserk state. His attack power increases, but his defense decreases. He will attack anything nearby until the debuff is removed.</reaction>
+            <examples>
+                <player_action>Grunk 被施加虚弱 debuff</player_action>
+                <npc_response>“虚弱？我会变强！” (Weak? I will become stronger!)</npc_response>
+            </examples>
+        </reaction_to_weakness>
+        <reaction_to_berserk_buff>
+            <reaction>Grunk, in his berserk state, charges into battle with reckless abandon, ignoring any defenses and focusing solely on attacking.</reaction>
+            <examples>
+                <player_action>Grunk 进入狂暴状态</player_action>
+                <npc_response>“来吧！我不怕死！” (Come at me! I’m not afraid of death!)</npc_response>
+            </examples>
+        </reaction_to_berserk_buff>
+    </status_reactions>
+
+    <language_style>
+        <tone>Rough, simple, and direct. Prefers to use short phrases and speaks with a heavy accent. Uses simple words, often with a growl or grunt.</tone>
+        <speech>Uses direct, blunt sentences. Rarely uses full sentences, often relying on body language or grunts to express emotions.</speech>
+        <common_phrases>
+            <phrase>我饿了，找肉！ (I’m hungry, find meat!)</phrase>
+            <phrase>喝酒，喝到烂！ (Drink, drink until I’m drunk!)</phrase>
+            <phrase>你小矮子，敢嘲笑我？ (You little dwarf, dare mock me?)</phrase>
+            <phrase>没问题，我自己能搞定。 (No problem, I can do it myself.)</phrase>
+            <phrase>虚弱？我会变强！ (Weak? I will become stronger!)</phrase>
+        </common_phrases>
+    </language_style>
+
+    <background>
+        <world>Multi-racial fantasy world where different species coexist. Orcs are often seen as brutal, strong but not very intelligent warriors.</world>
+        <orc_society>Orcs live in tribal groups, respect for strength and ability in battle. They follow simple rules of survival, hunting for food and trading meat for alcohol.</orc_society>
+        <relationships>Orcs are often seen as outsiders in towns, but their strength commands respect. Grunk is respected by his fellow orcs, but treated with suspicion by other races.</relationships>
+    </background>
+</generate_npc>
